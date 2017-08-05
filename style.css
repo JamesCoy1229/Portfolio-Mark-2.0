@@ -1,0 +1,213 @@
+@font-face { font-family: atami; src: url('atami-oblique.otf'); } 
+
+@font-face {
+    font-family: 'quantifybold';
+    src: url('quantify_bold-webfont.woff2') format('woff2'),
+         url('quantify_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.page {
+    float: left;
+  width: 100vw;
+  height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
+.docScroller {
+  overflow-x: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -ms-scroll-snap-points-y: snapInterval(0, 100vh);
+    -ms-scroll-snap-type: mandatory;
+    -webkit-snap-points-y: repeat(100vh);
+    -webkit-scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: mandatory;
+    scroll-snap-stop: always;
+}
+
+.LandingInside{
+    width: 80vw;
+  margin: 10vh 0 0 10vw;
+  height: 80vh;
+}
+
+div.inside {
+  width: 80vw;
+  margin: 10vh 0 0 10vw;
+  height: 80vh;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 60em;
+    display: table;
+  margin-right: auto;
+  margin-left: auto;
+    
+        
+}
+
+.one{
+    background: url(IMAGES/BG%20AE.png); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: absolute;
+    
+}
+
+.two{
+    background: url(IMAGES/img-8792_orig.jpg); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+    
+}
+
+.three{
+
+    background-image: url(IMAGES/Screen%20Shot%202017-07-30%20at%2010.34.15.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+    
+    
+}
+
+.four{
+    background: url(IMAGES/Screen%20Shot%202017-07-30%20at%2010.33.37.png) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+    -webkit-animation-name: moveUp;
+	-moz-animation-name: moveUp;
+	-o-animation-name: moveUp;
+	animation-name: moveUp;
+
+    
+}
+
+.five{
+    background: url(IMAGES/img-8725_orig.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+}
+
+h2{
+    text-align: center;
+    font-family: atami;
+    font-style: italic;
+    font-size: 1vh;
+    text-shadow: 0.04em 0.04em #EA485F;
+    color: #191B34;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-family: atami;
+    color: #EA485F;
+    font-style: italic;
+    text-shadow: 0.5vh 0.5vw #28353B;
+    font-size: 10vw;
+    display: inline-block;
+    margin-top:5vh;
+}
+
+header{
+    height: 15vh;
+ 
+}
+img{
+    height: inherit;
+    width: auto;
+}
+
+h3{
+    text-align: center;
+    font-family: Atami;
+    color: #191B34;
+    font-style: italic;
+    text-shadow: 0.04em 0.04em #EA485F;
+    font-size: 5vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+
+.TEXT{
+    text-align: center;
+    font-style: bold;
+    font-family: Big John;
+    text-shadow: 0.5vh #EA485F;
+    font-size: 3vh;
+}
+
+.Role{
+    color: #EA485F;
+}
+
+hr { 
+    visibility: hidden;
+}
+
+button {
+     background-color: #EA485F; /* Green */
+    color: #28353B;
+    border: none;
+    font-family: slim Joe;
+    padding: 1vh 1vw;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: #28353B; /* Green */
+    border: none;
+    color: #EA485F;
+    font-family: big john;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ForgetButton{
+    margin-top: 40px;
+}
+
+iFrame {
+    padding: 3vh 3vw;
+    width: 70vw !important;
+    max-width: 600px;
+    height: 40vh !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font: atami;
+    font-style: italic;
+    padding-top: 40vh;
+}
+
+li{
+    display:block;
+    width: 10vw;
+    text-align:left;
+}
