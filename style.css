@@ -14,9 +14,9 @@
   width: 100vw;
   height: 100vh;
     text-align: center;
-    align-content: center;
-	 background: #363636; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#E8175D, #363636); /* For Safari 5.1 to 6.0 
+    align-content: center;\
+	font: futura;
+	font-style: italic;
 }
 
 .docScroller {
