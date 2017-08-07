@@ -17,7 +17,7 @@
   height: 100vh;
     text-align: center;
     align-content: center;
-	font: futura;
+
 }
 
 .docScroller {
@@ -26,13 +26,9 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  -ms-scroll-snap-points-y: snapInterval(0, 100vh);
-    -ms-scroll-snap-type: mandatory;
-    -webkit-snap-points-y: repeat(100vh);
-    -webkit-scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: mandatory;
-    scroll-snap-stop: always;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
 }
 
 .LandingInside{
@@ -124,16 +120,21 @@ h1 {
     text-shadow: 0.5vh 0.5vw #28353B;
     font-size: 10vw;
     display: inline-block;
-    margin-top:5vh;
+    margin-top: 20vh;
 }
 
-header{
-    height: 15vh;
- 
+
+ul{
+
+    text-align: right
 }
+
 img{
-    height: inherit;
+    height: 9vh;
     width: auto;
+    display: inline-block;
+    float: left;
+    padding: 0.5vh;
 }
 
 h3{
@@ -155,7 +156,7 @@ h3{
 .TEXT{
     text-align: center;
     font-style: bold;
-    font-family: futura;
+    font-family: Futura;
     text-shadow: 0.5vh #EA485F;
     font-size: 3vh;
 }
@@ -200,17 +201,93 @@ iFrame {
     height: 40vh !important;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font: atami;
-    font-style: italic;
-    padding-top: 40vh;
+
+
+#header {
+		position: fixed;
+		z-index: 10000;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.95);
+		height: 3em;
+		line-height: 3em;
+		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+    height: 10vh;
+	}
+a{
+            font-family: futura, sans-serif;
+            font-style: bold;
+            font-size: 2.5vh;
+            margin: 1vh;
 }
 
-li{
-    display:block;
-    width: 10vw;
-    text-align:left;
-}
+		#header h1 {
+			position: absolute;
+			left: 1em;
+			top: 0;
+			height: 3em;
+			line-height: 3em;
+			cursor: default;
+		}
+
+			#header h1 a {
+				font-size: 1.25em;
+			}
+
+		#header nav {
+			position: absolute;
+			right: 0.5em;
+			top: 0;
+			height: 3em;
+			line-height: 3em;
+            
+		}
+
+			#header nav ul {
+				margin: 0;
+                
+			}
+
+				#header nav ul li {
+					display: inline-block;
+					margin-left: 0.5em;
+					font-size: 0.9em;
+				}
+
+					#header nav ul li a {
+						display: block;
+						color: inherit;
+						text-decoration: none;
+						height: 3em;
+						line-height: 3em;
+						padding: 0 0.5em 0 0.5em;
+						outline: 0;
+                        
+					}
+
+		@media screen and (max-width: 736px) {
+
+			#header {
+				height: 2.5em;
+				line-height: 2.5em;
+			}
+
+				#header h1 {
+					text-align: center;
+					position: relative;
+					left: 0;
+					top: 0;
+					height: 2.5em;
+					line-height: 2.5em;
+				}
+
+					#header h1 a {
+						font-size: 1em;
+					}
+
+				#header nav {
+					display: none;
+				}
+
+		}
