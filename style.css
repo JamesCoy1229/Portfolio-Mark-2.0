@@ -9,14 +9,14 @@
 
 }
 
+
+
 .page {
     float: left;
   width: 100vw;
   height: 100vh;
     text-align: center;
-    align-content: center;\
-	font: futura;
-	font-style: italic;
+    align-content: center;
 }
 
 .docScroller {
@@ -54,7 +54,7 @@ div.inside {
         
 }
 
-..one{
+.one{
     background: url(http://i.imgur.com/tPyi2PG.jpg); 
     background-size: cover; 
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ div.inside {
 }
 
 .five{
-    background: url(IMAGES/img-8725_orig.jpg) ; 
+    background: url(http://i.imgur.com/UiaRPAb.jpg) ; 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
