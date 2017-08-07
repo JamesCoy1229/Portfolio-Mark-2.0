@@ -1,155 +1,215 @@
-<!DOCTYPE html>
-<html><head>
-    <link href="IMAGES/Logo 1st Colour.png" rel="icon" type="image/x-icon" />	
-  <meta charset="UTF-8">
+@font-face { font-family: atami; src: url('atami-oblique.otf'); } 
+
+@font-face {
+    font-family: 'quantifybold';
+    src: url('quantify_bold-webfont.woff2') format('woff2'),
+         url('quantify_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.page {
+    float: left;
+  width: 100vw;
+  height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
+.docScroller {
+  overflow-x: hidden;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -ms-scroll-snap-points-y: snapInterval(0, 100vh);
+    -ms-scroll-snap-type: mandatory;
+    -webkit-snap-points-y: repeat(100vh);
+    -webkit-scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: mandatory;
+    scroll-snap-stop: always;
+}
+
+.LandingInside{
+    width: 80vw;
+  margin: 10vh 0 0 10vw;
+  height: 80vh;
+}
+
+div.inside {
+  width: 80vw;
+  margin: 10vh 0 0 10vw;
+  height: 80vh;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 60em;
+    display: table;
+  margin-right: auto;
+  margin-left: auto;
     
-  <title>James Coy's Portfolio</title>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-            
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+}
 
-        <link rel="stylesheet" href="style.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+.one{
+    background: url(http://i.imgur.com/tPyi2PG.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: absolute;
     
-        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+}
+
+.two{
+    background: url(http://i.imgur.com/Nkqedit.jpg); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
     
-        <script src="bower_components/aos/dist/aos.js"></script>
-        
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+}
+
+.three{
+
+    background-image: url(http://i.imgur.com/TubGWwi.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
     
-        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
-
-
     
-</head>
+}
 
-<body>
-  <div class="docScroller">
-    <div class="page one">
-        
-        <div class="LandingInside" data-aos="fade-down"> 
-          <header>
-
-                    <img url="http://imgur.com/nxK2g9T" alt="Logo">
-
-          </header>
-            
-                    <h1> James Coy <br> Portfolio</h1>
-            
-            
-      </div>
- </div>
+.four{
+    background: url(http://i.imgur.com/EE2yII8.png) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+    -webkit-animation-name: moveUp;
+	-moz-animation-name: moveUp;
+	-o-animation-name: moveUp;
+	animation-name: moveUp;
 
     
-      <div class="page two" >
-      <div class="inside" data-aos="fade-up">
-                    <h3> Sandbag</h3>
+}
 
-         <div class="TEXT">
+.five{
+    background: url(http://i.imgur.com/UiaRPAb.jpg) ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: absolute;
+}
 
-            <div class="Role">
+h2{
+    text-align: center;
+    font-family: atami;
+    font-style: italic;
+    font-size: 1vh;
+    text-shadow: 0.04em 0.04em #EA485F;
+    color: #191B34;
+    text-decoration: underline;
+}
 
-                    <p> Role - Cinematographer</p>
-                
-             </div> 
-<div class="Video-container">
-                    <iframe src="https://www.youtube.com/embed/m2x9FLE4WZ4" frameborder="0" allowfullscreen></iframe>
-             </div>
-                    <hr>
-             
-                    <button type="button">Click Here to Find Out More</button>
-                  
-        </div>
-          
-      </div>
-    </div>
-      
-      
+h1 {
+    text-align: center;
+    font-family: atami;
+    color: #EA485F;
+    font-style: italic;
+    text-shadow: 0.5vh 0.5vw #28353B;
+    font-size: 10vw;
+    display: inline-block;
+    margin-top:5vh;
+}
+
+header{
+    height: 15vh;
+ 
+}
+img{
+    height: inherit;
+    width: auto;
+}
+
+h3{
+    text-align: center;
+    font-family: Atami;
+    color: #191B34;
+    font-style: italic;
+    text-shadow: 0.04em 0.04em #EA485F;
+    font-size: 5vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
     
-      <div class="page three">
-      <div class="inside" data-aos="fade-up">
+}
 
-                    <h3> Forget Me Not</h3>
 
-        <div class="TEXT">
 
-            <div class="Role">
 
-                    <p> Role - Editor</p>
 
-            </div> 
-           <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/6XdT3MF0YeY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-                  <hr>
-            <button type="button">Click Here to Find Out More</button>
-                  
-        </div>
-          
-      </div>
-    </div>
-    <div class="page four">
-      <div class="inside" data-aos="fade-up">
-                    
-                    <h3>Reservoir Dogs <br > Sound Re-Design</h3>  
-         <div class="TEXT">
-             
-            <div class="Role">
-                
-                   <p> Role - Editor</p>
-            
-             </div> 
+.TEXT{
+    text-align: center;
+    font-style: bold;
+    font-family: Big John;
+    text-shadow: 0.5vh #EA485F;
+    font-size: 3vh;
+}
 
-<div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ILXMIGc-Omw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-             </div>
-                    <hr>
-            
-        <div class="ReservoirButton">
-            
-                    <button type="button">Click Here to Find Out More</button>
-         </div>
-      </div>
-    </div>
-</div>
-      
-      <div class="page five">
-      <div class="inside" data-aos="fade-up">
-                    
-                    <h3>Reservoir Dogs <br > Sound Re-Design</h3>  
-         <div class="TEXT">
-             
-            <div class="Role">
-                
-                   <p> Role - Editor</p>
-            
-             </div> 
+.Role{
+    color: #EA485F;
+}
 
-<div class="Video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ILXMIGc-Omw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                    <hr>
-            
-        <div class="ReservoirButton">
-            
-                    <button type="button">Click Here to Find Out More</button>
-         </div>
-      </div>
-    </div>
-</div>
-	</div>
-      
-      
-      
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+hr { 
+    visibility: hidden;
+}
 
-    <script src="js/index.js"></script>
-    
-    <script src="Scripts.js"></script>
-    
+button {
+     background-color: #EA485F; /* Green */
+    color: #28353B;
+    border: none;
+    font-family: slim Joe;
+    padding: 1vh 1vw;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
 
-</body>
-</html>
+button:hover {
+    background-color: #28353B; /* Green */
+    border: none;
+    color: #EA485F;
+    font-family: big john;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+ForgetButton{
+    margin-top: 40px;
+}
+
+iFrame {
+    padding: 3vh 3vw;
+    width: 70vw !important;
+    max-width: 600px;
+    height: 40vh !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font: atami;
+    font-style: italic;
+    padding-top: 40vh;
+}
+
+li{
+    display:block;
+    width: 10vw;
+    text-align:left;
+}
